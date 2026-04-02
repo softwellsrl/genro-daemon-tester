@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<GenRoBag>
+  <db dbname="pazuzu"/>
+  <packages>
+    <gnrcore_sys pkgcode="gnrcore:sys"/>
+    <gnrcore_adm pkgcode="gnrcore:adm"/>
+    <gnr_it_glbl pkgcode="gnr_it:glbl"/>
+    <gnrcore_test pkgcode="gnrcore:test"/>
+    <gnrcore_test15 pkgcode="gnrcore:test15"/>
+    <pazuzu pkgcode="pazuzu" />
+  </packages>
+  
+  <authentication pkg="adm">
+    <py_auth defaultTags="user" pkg="adm" method="authenticate"/>
+  </authentication>
+  
+  <site>
+    <wsgi mainpackage='pazuzu'/>
+  </site>
+</GenRoBag>
