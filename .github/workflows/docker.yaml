@@ -1,0 +1,23 @@
+
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: genropy/actions@develop
+        with:
+          image_name: pazuzu
+          instance_name: pazuzu
+          org_clone_token: ${{ secrets.SOFTWELL_CI_BUILD_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
