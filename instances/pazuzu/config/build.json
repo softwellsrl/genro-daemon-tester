@@ -1,11 +1,6 @@
 {
     "dependencies": {
         "git_repositories": {
-            "genro-daemon-tester": {
-                "url": "git@github.com:genropy/genro-daemon-tester.git",
-                "branch_or_commit": "main",
-                "description": "genro-daemon-tester"
-            }
         }
     }
 }
