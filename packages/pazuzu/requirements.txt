@@ -1,1 +1,1 @@
-genro_daemon @ git+https://github.com/genropy/genro-daemon.git@main
+genro_daemon @ git+https@github.com/genropy/genro-daemon.git@main
